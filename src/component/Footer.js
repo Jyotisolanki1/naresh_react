@@ -1,29 +1,19 @@
 import React,{Component} from "react";
 
-class Footer extends Component{
-    render(){
-        return(
-            <h1>class footer</h1>
-        );
-    }
+//function component
+const Footer = (props) =>{
+    console.log("react props",props);
+    return(
+        <React.Fragment>
+            <footer>
+             <hr/>
+             <center>
+                <h3>&copy; Developer Funnel {props.year} {props.month}</h3>
+             </center>
+            </footer>
+            
+        </React.Fragment>
+    )                   
 }
-
-// //external css/and function component
-// const foot = {
-//     footer:{
-//         backgroundColor: "green",
-//     }
-// }
-// // //function component
-// // const Footer = () =>{
-// //     return(
-// //         <React.Fragment>
-// //             <footer style={foot.footer}>
-// //             <h1>footer</h1>
-// //             </footer>
-// //             <hr/>
-// //         </React.Fragment>
-// //     )
-// // }
  
 export default Footer;
