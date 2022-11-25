@@ -8,7 +8,7 @@ class Footer extends Component{
     }
 }
 
-// //external css
+// //external css/and function component
 // const foot = {
 //     footer:{
 //         backgroundColor: "green",
